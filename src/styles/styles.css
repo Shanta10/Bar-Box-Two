@@ -1,0 +1,128 @@
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+  
+  .drink-image {
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .drink-image.selected {
+    border: 2px solid blue;
+  }
+  
+  .quantity-options {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .large-button {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2em;
+  }
+
+  .drink-image {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .drink-image.selected {
+    border: 5px solid #3f51b5;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .drink-image:not(.selected) {
+    opacity: 0.5;
+  }
+  
+  .quantity-option {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.quantity-option.selected {
+  background-color: #3f51b5;
+  color: white;
+  transform: scale(1.1);
+}
+
+.quantity-option:not(.selected) {
+  background-color: #f0f0f0;
+}
+
+.quantity-option {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+  }
+  
+  .quantity-option.selected {
+    background-color: #3f51b5;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  .quantity-option:not(.selected) {
+    background-color: #f0f0f0;
+  }
+
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logo {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .enter-button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 200px; 
+  }
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .logo {
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .enter-button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  
