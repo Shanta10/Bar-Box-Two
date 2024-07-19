@@ -2,7 +2,27 @@ import React from 'react';
 import { Box } from '@mui/material';
 import '../styles/styles.css';
 
-const PortionList = ({ portions, selectedDrink, selectedPortions, handlePortionSelect, isPortionDisabled }) => {
+interface Portion {
+  id: number;
+  label: string;
+  value: number;
+}
+
+interface PortionListProps {
+  portions: Portion[];
+  selectedDrink: number | null;
+  selectedPortions: { [key: number]: number };
+  handlePortionSelect: (id: number) => void;
+  isPortionDisabled: (value: number) => boolean;
+}
+
+const PortionList: React.FC<PortionListProps> = ({
+  portions,
+  selectedDrink,
+  selectedPortions,
+  handlePortionSelect,
+  isPortionDisabled
+}) => {
   return (
     <div className="quantity-options">
       {portions.map((portion) => (

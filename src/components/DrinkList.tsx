@@ -2,7 +2,20 @@ import React from 'react';
 import { Grid, Box, Typography } from '@mui/material';
 import '../styles/styles.css';
 
-const DrinkList = ({ drinks, selectedDrink, handleDrinkSelect }) => {
+interface Drink {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+}
+
+interface DrinkListProps {
+  drinks: Drink[];
+  selectedDrink: number | null;
+  handleDrinkSelect: (id: number) => void;
+}
+
+const DrinkList: React.FC<DrinkListProps> = ({ drinks, selectedDrink, handleDrinkSelect }) => {
   return (
     <Grid container spacing={2}>
       {drinks.map((drink) => (
